@@ -62,6 +62,8 @@
     <link rel="stylesheet" href="assets/css/animate.min.css">
     <!-- Theme Custom CSS -->
     <link rel="stylesheet" href="assets/css/style.css">
+    <!-- Reserve the LayerSlider box (hidden until JS init): height = width x 810/1900. The header nav that vsmenu.js hides below 992px is hidden in CSS too, so nothing shifts when the JS runs -->
+    <style>.hero-box,.ls-direction-fix{aspect-ratio:1900/810}@media (max-width:991.98px){.header-wrapper .mobile-menu-active{display:none}}</style>
 
 </head>
 
@@ -239,7 +241,7 @@
                 <div class="row align-items-center justify-content-between">
                     <div class="col-auto d-none d-lg-block">
                         <div class="header-infos">
-                            <p class="info"><img src="assets/img/icons/info-icon-1.png" alt="icon">Free exress international delevery + Easy returens</p>
+                            <p class="info"><img src="assets/img/icons/info-icon-1.png" alt="icon" width="33" height="23">Free exress international delevery + Easy returens</p>
                         </div>
                     </div>
                     <div class="col-lg-auto text-center text-lg-end">
@@ -306,20 +308,20 @@
     <!--==============================
       Hero Area
     ==============================-->
-    <div class="  ">
+    <div class="hero-box">
         <div class="vs-hero-carousel hero-layout6" data-globalbgimage="assets/img/hero/hero-bg-6-1.webp" data-height="810" data-container="1900" data-slidertype="responsive">
             <!-- Slide 1-->
             <div class="ls-slide" data-ls="duration:12000; transition2d:5; kenburnsscale:1.2;">
-                <img width="781" height="534" src="assets/img/hero/hero-6-1.png" class="ls-l ls-hide-tablet ls-hide-phone ls-hide-hd" alt="image" style="top:257px; left:1119px; background-size:inherit; background-position:inherit;" data-ls="offsetxin:100; durationin:1500; delayin:500; static:forever;">
-                <img width="781" height="534" src="assets/img/hero/hero-6-1.png" class="ls-l ls-hide-desktop" alt="image" style="top:237px; left:1121px; background-size:inherit; background-position:inherit;" data-ls="offsetxin:100; durationin:1500; delayin:500; static:forever;">
-                <img width="658" height="543" src="assets/img/hero/hero-6-1-1.png" class="ls-l ls-hide-tablet ls-hide-phone" alt="image" style="top:215px; left:969px; background-size:inherit; background-position:inherit;">
+                <img width="781" height="534" src="assets/img/hero/hero-6-1.webp" class="ls-l ls-hide-tablet ls-hide-phone ls-hide-hd" alt="image" style="top:257px; left:1119px; background-size:inherit; background-position:inherit;" data-ls="offsetxin:100; durationin:1500; delayin:500; static:forever;">
+                <img width="781" height="534" src="assets/img/hero/hero-6-1.webp" class="ls-l ls-hide-desktop" alt="image" style="top:237px; left:1121px; background-size:inherit; background-position:inherit;" data-ls="offsetxin:100; durationin:1500; delayin:500; static:forever;">
+                <img width="658" height="543" src="assets/img/hero/hero-6-1-1.webp" class="ls-l ls-hide-tablet ls-hide-phone" alt="image" style="top:215px; left:969px; background-size:inherit; background-position:inherit;">
                 <p style="top:365px; left:375px; font-weight:700; background-size:inherit; background-position:inherit; font-size:35px; font-family:Amatic SC; color:#ffffff; letter-spacing:1px;" class="ls-l ls-hide-tablet ls-hide-phone" data-ls="offsetyin:-100; durationin:1500; delayin:800; easingin:easeOutQuint;">100% Organic Fruits</p>
                 <p style="top:405px; left:375px; font-weight:700; background-size:inherit; background-position:inherit; font-size:65px; color:#fcd55c; font-family:'Advent Pro', sans-serif;" class="ls-l ls-hide-tablet ls-hide-phone" data-ls="offsetxin:-200; durationin:1500; easingin:easeOutQuint;">Organic Plants and</p>
                 <p style="top:485px; left:375px; font-weight:700; background-size:inherit; background-position:inherit; font-size:65px; color:#fcd55c; font-family:'Advent Pro', sans-serif;" class="ls-l ls-hide-tablet ls-hide-phone" data-ls="offsetxin:-200; durationin:1500; delayin:400; easingin:easeOutQuint;">100% Fresh Fruits</p>
                 <div style="top:611px; left:375px; background-size:inherit; background-position:inherit;" class="ls-l ls-hide-tablet ls-hide-phone" data-ls="offsetyin:100; durationin:1500; delayin:800; easingin:easeOutQuint; offsetyout:200; durationout:1500; easingout:easeOutQuint;">
                     <a href="shop.html" class="vs-btn style5 ls-btn">Start Shopping<i class="far fa-angle-right"></i></a>
                 </div>
-                <img width="658" height="543" src="assets/img/hero/hero-6-1-1.png" class="ls-l ls-hide-desktop" alt="image" style="top:54px; left:916px; background-size:inherit; background-position:inherit; width:835px; height:689px;">
+                <img width="658" height="543" src="assets/img/hero/hero-6-1-1.webp" class="ls-l ls-hide-desktop" alt="image" style="top:54px; left:916px; background-size:inherit; background-position:inherit; width:835px; height:689px;">
                 <p style="top:150px; left:100px; font-weight:700; background-size:inherit; background-position:inherit; font-family:Amatic SC; color:#ffffff; letter-spacing:1px; font-size:70px;" class="ls-l ls-hide-desktop ls-hide-phone" data-ls="offsetyin:-100; durationin:1500; delayin:800; easingin:easeOutQuint;">100% Organic Fruits</p>
                 <p style="top:240px; left:100px; font-weight:700; background-size:inherit; background-position:inherit; font-size:100px; color:#fcd55c; font-family:'Advent Pro', sans-serif;" class="ls-l ls-hide-desktop ls-hide-phone" data-ls="offsetxin:-200; durationin:1500; easingin:easeOutQuint;">Organic Plants and</p>
                 <p style="top:358px; left:100px; font-weight:700; background-size:inherit; background-position:inherit; font-size:100px; color:#fcd55c; font-family:'Advent Pro', sans-serif;" class="ls-l ls-hide-desktop ls-hide-phone" data-ls="offsetxin:-200; durationin:1500; delayin:400; easingin:easeOutQuint;">100% Fresh Fruits</p>
@@ -343,7 +345,7 @@
                 <a class="ls-l ls-hide-tablet ls-hide-phone" href="#5" target="_self" data-ls="hover:true; hoverbgcolor:#76a713; hovercolor:#ffffff; static:forever;">
                     <p style='top:620px; left:1760px; text-align:center; font-weight:700; background-size:inherit; background-position:inherit; font-size:16px; font-family:"Lato", sans-serif; line-height:40px; width:40px; height:40px; border-radius:100%; color:#000000; background-color:#ffffff;' class="">5</p>
                 </a>
-                <img width="126" height="151" src="assets/img/hero/hero-6-leaf-4.png" class="ls-l" alt="image" style="top:-300px; left:642px; background-size:inherit; background-position:inherit;" data-ls="offsetyin:top; durationin:1500; delayin:15000; easingin:easeOutQuint; rotatein:random(-160,160); loop:true; loopoffsety:150sh; loopduration:10000; looprotate:random(-180,180); loopcount:-1; looprepeatdelay:6000; static:forever;">
+                <img width="126" height="151" src="assets/img/hero/hero-6-leaf-4.webp" class="ls-l" alt="image" style="top:-300px; left:642px; background-size:inherit; background-position:inherit;" data-ls="offsetyin:top; durationin:1500; delayin:15000; easingin:easeOutQuint; rotatein:random(-160,160); loop:true; loopoffsety:150sh; loopduration:10000; looprotate:random(-180,180); loopcount:-1; looprepeatdelay:6000; static:forever;">
                 <img width="114" height="97" src="assets/img/hero/hero-6-leaf-1.png" class="ls-l" alt="leaf" style="top:-300px; left:1500px; background-size:inherit; background-position:inherit;" data-ls="offsetyin:top; durationin:1500; delayin:2000; easingin:easeOutQuint; rotatein:random(-160,160); loop:true; loopoffsety:150sh; loopduration:10000; looprotate:random(-180,180); loopcount:-1; looprepeatdelay:6000; static:forever;">
                 <img width="60" height="66" src="assets/img/hero/hero-6-leaf-3.png" class="ls-l" alt="image" style="top:-300px; left:50px; background-size:inherit; background-position:inherit;" data-ls="offsetyin:top; durationin:1500; delayin:5000; easingin:easeOutQuint; rotatein:random(-160,160); loop:true; loopoffsety:150sh; loopduration:10000; looprotate:random(-180,180); loopcount:-1; looprepeatdelay:6000; static:forever;">
                 <img width="115" height="96" src="assets/img/hero/hero-6-leaf-2.png" class="ls-l" alt="leaf" style="top:-300px; left:1200px; background-size:inherit; background-position:inherit;" data-ls="offsetyin:top; durationin:1500; delayin:4000; easingin:easeOutQuint; rotatein:random(-160,160); loop:true; loopoffsety:150sh; loopduration:10000; looprotate:random(-180,180); loopcount:-1; looprepeatdelay:6000; static:forever;">
@@ -355,14 +357,14 @@
 
             <!-- Slide 2-->
             <div class="ls-slide" data-ls="duration:12000; transition2d:5; kenburnsscale:1.2;">
-                <img width="687" height="554" src="assets/img/hero/hero-6-1-2.png" class="ls-l ls-hide-tablet ls-hide-phone" alt="image" style="top:215px; left:969px; background-size:inherit; background-position:inherit;">
+                <img width="687" height="554" src="assets/img/hero/hero-6-1-2.webp" class="ls-l ls-hide-tablet ls-hide-phone" alt="image" style="top:215px; left:969px; background-size:inherit; background-position:inherit;">
                 <p style="top:365px; left:375px; font-weight:700; background-size:inherit; background-position:inherit; font-size:35px; font-family:Amatic SC; color:#ffffff; letter-spacing:1px;" class="ls-l ls-hide-tablet ls-hide-phone" data-ls="offsetyin:-100; durationin:1500; delayin:800; easingin:easeOutQuint;">Blessed Be The Fruit</p>
                 <p style="top:405px; left:375px; font-weight:700; background-size:inherit; background-position:inherit; font-size:65px; color:#fcd55c; font-family:'Advent Pro', sans-serif;" class="ls-l ls-hide-tablet ls-hide-phone" data-ls="offsetxin:-200; durationin:1500; easingin:easeOutQuint;">Green Paradise Farm</p>
                 <p style="top:485px; left:375px; font-weight:700; background-size:inherit; background-position:inherit; font-size:65px; color:#fcd55c; font-family:'Advent Pro', sans-serif;" class="ls-l ls-hide-tablet ls-hide-phone" data-ls="offsetxin:-200; durationin:1500; delayin:400; easingin:easeOutQuint;">&amp; Healthy Fridge</p>
                 <div style="top:611px; left:375px; background-size:inherit; background-position:inherit;" class="ls-l ls-hide-tablet ls-hide-phone" data-ls="offsetyin:100; durationin:1500; delayin:800; easingin:easeOutQuint; offsetyout:200; durationout:1500; easingout:easeOutQuint;">
                     <a href="shop.html" class="vs-btn style5 ls-btn">Start Shopping<i class="far fa-angle-right"></i></a>
                 </div>
-                <img width="687" height="554" src="assets/img/hero/hero-6-1-2.png" class="ls-l ls-hide-desktop" alt="image" style="top:54px; left:916px; background-size:inherit; background-position:inherit; width:835px; height:689px;">
+                <img width="687" height="554" src="assets/img/hero/hero-6-1-2.webp" class="ls-l ls-hide-desktop" alt="image" style="top:54px; left:916px; background-size:inherit; background-position:inherit; width:835px; height:689px;">
                 <p style="top:150px; left:100px; font-weight:700; background-size:inherit; background-position:inherit; font-family:Amatic SC; color:#ffffff; letter-spacing:1px; font-size:70px;" class="ls-l ls-hide-desktop ls-hide-phone" data-ls="offsetyin:-100; durationin:1500; delayin:800; easingin:easeOutQuint;">Blessed Be The Fruit</p>
                 <p style="top:240px; left:100px; font-weight:700; background-size:inherit; background-position:inherit; font-size:100px; color:#fcd55c; font-family:'Advent Pro', sans-serif;" class="ls-l ls-hide-desktop ls-hide-phone" data-ls="offsetxin:-200; durationin:1500; easingin:easeOutQuint;">Green Paradise Farm</p>
                 <p style="top:358px; left:100px; font-weight:700; background-size:inherit; background-position:inherit; font-size:100px; color:#fcd55c; font-family:'Advent Pro', sans-serif;" class="ls-l ls-hide-desktop ls-hide-phone" data-ls="offsetxin:-200; durationin:1500; delayin:400; easingin:easeOutQuint;">&amp; Healthy Fridge</p>
@@ -375,14 +377,14 @@
 
             <!-- Slide 3-->
             <div class="ls-slide" data-ls="duration:12000; transition2d:5; kenburnsscale:1.2;">
-                <img width="639" height="536" src="assets/img/hero/hero-6-1-3.png" class="ls-l ls-hide-tablet ls-hide-phone" alt="image" style="top:215px; left:969px; background-size:inherit; background-position:inherit;">
+                <img width="639" height="536" src="assets/img/hero/hero-6-1-3.webp" class="ls-l ls-hide-tablet ls-hide-phone" alt="image" style="top:215px; left:969px; background-size:inherit; background-position:inherit;">
                 <p style="top:365px; left:375px; font-weight:700; background-size:inherit; background-position:inherit; font-size:35px; font-family:Amatic SC; color:#ffffff; letter-spacing:1px;" class="ls-l ls-hide-tablet ls-hide-phone" data-ls="offsetyin:-100; durationin:1500; delayin:800; easingin:easeOutQuint;">Tip Top Quality</p>
                 <p style="top:405px; left:375px; font-weight:700; background-size:inherit; background-position:inherit; font-size:65px; color:#fcd55c; font-family:'Advent Pro', sans-serif;" class="ls-l ls-hide-tablet ls-hide-phone" data-ls="offsetxin:-200; durationin:1500; easingin:easeOutQuint;">Grass-Fed &amp; Gorgeous</p>
                 <p style="top:485px; left:375px; font-weight:700; background-size:inherit; background-position:inherit; font-size:65px; color:#fcd55c; font-family:'Advent Pro', sans-serif;" class="ls-l ls-hide-tablet ls-hide-phone" data-ls="offsetxin:-200; durationin:1500; delayin:400; easingin:easeOutQuint;">Natural Radiance</p>
                 <div style="top:611px; left:375px; background-size:inherit; background-position:inherit;" class="ls-l ls-hide-tablet ls-hide-phone" data-ls="offsetyin:100; durationin:1500; delayin:800; easingin:easeOutQuint; offsetyout:200; durationout:1500; easingout:easeOutQuint;">
                     <a href="shop.html" class="vs-btn style5 ls-btn">Start Shopping<i class="far fa-angle-right"></i></a>
                 </div>
-                <img width="639" height="536" src="assets/img/hero/hero-6-1-3.png" class="ls-l ls-hide-desktop" alt="image" style="top:54px; left:916px; background-size:inherit; background-position:inherit; width:835px; height:689px;">
+                <img width="639" height="536" src="assets/img/hero/hero-6-1-3.webp" class="ls-l ls-hide-desktop" alt="image" style="top:54px; left:916px; background-size:inherit; background-position:inherit; width:835px; height:689px;">
                 <p style="top:150px; left:100px; font-weight:700; background-size:inherit; background-position:inherit; font-family:Amatic SC; color:#ffffff; letter-spacing:1px; font-size:70px;" class="ls-l ls-hide-desktop ls-hide-phone" data-ls="offsetyin:-100; durationin:1500; delayin:800; easingin:easeOutQuint;">Tip Top Quality</p>
                 <p style="top:240px; left:100px; font-weight:700; background-size:inherit; background-position:inherit; font-size:100px; color:#fcd55c; font-family:'Advent Pro', sans-serif;" class="ls-l ls-hide-desktop ls-hide-phone" data-ls="offsetxin:-200; durationin:1500; easingin:easeOutQuint;">Grass-Fed &amp; Gorgeous</p>
                 <p style="top:358px; left:100px; font-weight:700; background-size:inherit; background-position:inherit; font-size:100px; color:#fcd55c; font-family:'Advent Pro', sans-serif;" class="ls-l ls-hide-desktop ls-hide-phone" data-ls="offsetxin:-200; durationin:1500; delayin:400; easingin:easeOutQuint;">Natural Radiance</p>
@@ -395,14 +397,14 @@
 
             <!-- Slide 4-->
             <div class="ls-slide" data-ls="duration:12000; transition2d:5; kenburnsscale:1.2;">
-                <img width="627" height="537" src="assets/img/hero/hero-6-1-4.png" class="ls-l ls-hide-tablet ls-hide-phone" alt="image" style="top:215px; left:969px; background-size:inherit; background-position:inherit;">
+                <img width="627" height="537" src="assets/img/hero/hero-6-1-4.webp" class="ls-l ls-hide-tablet ls-hide-phone" alt="image" style="top:215px; left:969px; background-size:inherit; background-position:inherit;">
                 <p style="top:365px; left:375px; font-weight:700; background-size:inherit; background-position:inherit; font-size:35px; font-family:Amatic SC; color:#ffffff; letter-spacing:1px;" class="ls-l ls-hide-tablet ls-hide-phone" data-ls="offsetyin:-100; durationin:1500; delayin:800; easingin:easeOutQuint;">Say Yes To Health</p>
                 <p style="top:405px; left:375px; font-weight:700; background-size:inherit; background-position:inherit; font-size:65px; color:#fcd55c; font-family:'Advent Pro', sans-serif;" class="ls-l ls-hide-tablet ls-hide-phone" data-ls="offsetxin:-200; durationin:1500; easingin:easeOutQuint;">Organic Feast Health</p>
                 <p style="top:485px; left:375px; font-weight:700; background-size:inherit; background-position:inherit; font-size:65px; color:#fcd55c; font-family:'Advent Pro', sans-serif;" class="ls-l ls-hide-tablet ls-hide-phone" data-ls="offsetxin:-200; durationin:1500; delayin:400; easingin:easeOutQuint;">Green Machine</p>
                 <div style="top:611px; left:375px; background-size:inherit; background-position:inherit;" class="ls-l ls-hide-tablet ls-hide-phone" data-ls="offsetyin:100; durationin:1500; delayin:800; easingin:easeOutQuint; offsetyout:200; durationout:1500; easingout:easeOutQuint;">
                     <a href="shop.html" class="vs-btn style5 ls-btn">Start Shopping<i class="far fa-angle-right"></i></a>
                 </div>
-                <img width="627" height="537" src="assets/img/hero/hero-6-1-4.png" class="ls-l ls-hide-desktop" alt="image" style="top:54px; left:916px; background-size:inherit; background-position:inherit; width:835px; height:689px;">
+                <img width="627" height="537" src="assets/img/hero/hero-6-1-4.webp" class="ls-l ls-hide-desktop" alt="image" style="top:54px; left:916px; background-size:inherit; background-position:inherit; width:835px; height:689px;">
                 <p style="top:150px; left:100px; font-weight:700; background-size:inherit; background-position:inherit; font-family:Amatic SC; color:#ffffff; letter-spacing:1px; font-size:70px;" class="ls-l ls-hide-desktop ls-hide-phone" data-ls="offsetyin:-100; durationin:1500; delayin:800; easingin:easeOutQuint;">Say Yes To Health</p>
                 <p style="top:240px; left:100px; font-weight:700; background-size:inherit; background-position:inherit; font-size:100px; color:#fcd55c; font-family:'Advent Pro', sans-serif;" class="ls-l ls-hide-desktop ls-hide-phone" data-ls="offsetxin:-200; durationin:1500; easingin:easeOutQuint;">Organic Feast Health</p>
                 <p style="top:358px; left:100px; font-weight:700; background-size:inherit; background-position:inherit; font-size:100px; color:#fcd55c; font-family:'Advent Pro', sans-serif;" class="ls-l ls-hide-desktop ls-hide-phone" data-ls="offsetxin:-200; durationin:1500; delayin:400; easingin:easeOutQuint;">Green Machine</p>
@@ -415,14 +417,14 @@
 
             <!-- Slide 5-->
             <div class="ls-slide" data-ls="duration:12000; transition2d:5; kenburnsscale:1.2;">
-                <img width="649" height="537" src="assets/img/hero/hero-6-1-5.png" class="ls-l ls-hide-tablet ls-hide-phone" alt="image" style="top:215px; left:969px; background-size:inherit; background-position:inherit;">
+                <img width="649" height="537" src="assets/img/hero/hero-6-1-5.webp" class="ls-l ls-hide-tablet ls-hide-phone" alt="image" style="top:215px; left:969px; background-size:inherit; background-position:inherit;">
                 <p style="top:365px; left:375px; font-weight:700; background-size:inherit; background-position:inherit; font-size:35px; font-family:Amatic SC; color:#ffffff; letter-spacing:1px;" class="ls-l ls-hide-tablet ls-hide-phone" data-ls="offsetyin:-100; durationin:1500; delayin:800; easingin:easeOutQuint;">Farm To Market</p>
                 <p style="top:405px; left:375px; font-weight:700; background-size:inherit; background-position:inherit; font-size:65px; color:#fcd55c; font-family:'Advent Pro', sans-serif;" class="ls-l ls-hide-tablet ls-hide-phone" data-ls="offsetxin:-200; durationin:1500; easingin:easeOutQuint;">Good Food On The</p>
                 <p style="top:485px; left:375px; font-weight:700; background-size:inherit; background-position:inherit; font-size:65px; color:#fcd55c; font-family:'Advent Pro', sans-serif;" class="ls-l ls-hide-tablet ls-hide-phone" data-ls="offsetxin:-200; durationin:1500; delayin:400; easingin:easeOutQuint;">Move of Happy</p>
                 <div style="top:611px; left:375px; background-size:inherit; background-position:inherit;" class="ls-l ls-hide-tablet ls-hide-phone" data-ls="offsetyin:100; durationin:1500; delayin:800; easingin:easeOutQuint; offsetyout:200; durationout:1500; easingout:easeOutQuint;">
                     <a href="shop.html" class="vs-btn style5 ls-btn">Start Shopping<i class="far fa-angle-right"></i></a>
                 </div>
-                <img width="649" height="537" src="assets/img/hero/hero-6-1-5.png" class="ls-l ls-hide-desktop" alt="image" style="top:54px; left:916px; background-size:inherit; background-position:inherit; width:835px; height:689px;">
+                <img width="649" height="537" src="assets/img/hero/hero-6-1-5.webp" class="ls-l ls-hide-desktop" alt="image" style="top:54px; left:916px; background-size:inherit; background-position:inherit; width:835px; height:689px;">
                 <p style="top:150px; left:100px; font-weight:700; background-size:inherit; background-position:inherit; font-family:Amatic SC; color:#ffffff; letter-spacing:1px; font-size:70px;" class="ls-l ls-hide-desktop ls-hide-phone" data-ls="offsetyin:-100; durationin:1500; delayin:800; easingin:easeOutQuint;">Farm To Market</p>
                 <p style="top:240px; left:100px; font-weight:700; background-size:inherit; background-position:inherit; font-size:100px; color:#fcd55c; font-family:'Advent Pro', sans-serif;" class="ls-l ls-hide-desktop ls-hide-phone" data-ls="offsetxin:-200; durationin:1500; easingin:easeOutQuint;">Good Food On The</p>
                 <p style="top:358px; left:100px; font-weight:700; background-size:inherit; background-position:inherit; font-size:100px; color:#fcd55c; font-family:'Advent Pro', sans-serif;" class="ls-l ls-hide-desktop ls-hide-phone" data-ls="offsetxin:-200; durationin:1500; delayin:400; easingin:easeOutQuint;">Move of Happy</p>
@@ -444,7 +446,7 @@
                 <div class="col-xl-4">
                     <div class="cat-box">
                         <div class="cat-box__img">
-                            <img src="assets/img/category/cat-1-1.png" alt="Category image">
+                            <img src="assets/img/category/cat-1-1.webp" alt="Category image" width="333" height="330">
                         </div>
                         <h3 class="cat-box__title"><a href="shop.html">Organic Fruits</a></h3>
                         <p class="cat-box__text">Phasellus enim libero, blandit vel sapien vitae, condimentum ultricies magna et. Quisque euismod orci lobortis...</p>
@@ -453,7 +455,7 @@
                 <div class="col-xl-4">
                     <div class="cat-box">
                         <div class="cat-box__img">
-                            <img src="assets/img/category/cat-1-2.png" alt="Category image">
+                            <img src="assets/img/category/cat-1-2.webp" alt="Category image" width="337" height="330">
                         </div>
                         <h3 class="cat-box__title"><a href="shop.html">Organic Vagitables</a></h3>
                         <p class="cat-box__text">Phasellus enim libero, blandit vel sapien vitae, condimentum ultricies magna et. Quisque euismod orci lobortis...</p>
@@ -462,7 +464,7 @@
                 <div class="col-xl-4">
                     <div class="cat-box">
                         <div class="cat-box__img">
-                            <img src="assets/img/category/cat-1-3.png" alt="Category image">
+                            <img src="assets/img/category/cat-1-3.webp" alt="Category image" width="339" height="330">
                         </div>
                         <h3 class="cat-box__title"><a href="shop.html">Farms and Family</a></h3>
                         <p class="cat-box__text">Phasellus enim libero, blandit vel sapien vitae, condimentum ultricies magna et. Quisque euismod orci lobortis...</p>
@@ -471,7 +473,7 @@
                 <div class="col-xl-4">
                     <div class="cat-box">
                         <div class="cat-box__img">
-                            <img src="assets/img/category/cat-1-4.png" alt="Category image">
+                            <img src="assets/img/category/cat-1-4.webp" alt="Category image" width="339" height="330">
                         </div>
                         <h3 class="cat-box__title"><a href="shop.html">Dairy Products</a></h3>
                         <p class="cat-box__text">Phasellus enim libero, blandit vel sapien vitae, condimentum ultricies magna et. Quisque euismod orci lobortis...</p>
@@ -504,7 +506,7 @@
                     </div>
                 </div>
                 <div class="col-auto mb-30 mb-xl-0 d-none d-lg-block">
-                    <img src="assets/img/about/ab-6-1.png" alt="About image">
+                    <img src="assets/img/about/ab-6-1.webp" alt="About image" width="227" height="229" loading="lazy" decoding="async">
                 </div>
             </div>
         </div>
@@ -513,10 +515,10 @@
                 <div class="col-lg-6 col-xxl-auto mb-40 mb-lg-0">
                     <div class="img-box2">
                         <div class="img-1">
-                            <img src="assets/img/about/ab-6-2.png" alt="About image">
+                            <img src="assets/img/about/ab-6-2.webp" alt="About image" width="844" height="620" loading="lazy" decoding="async">
                             <a href="https://www.youtube.com/watch?v=_sI_Ps7JSEk" class="play-btn style2 popup-video"><i class="fas fa-play"></i></a>
                             <div class="img-2">
-                                <img src="assets/img/about/ab-6-3.png" alt="About image">
+                                <img src="assets/img/about/ab-6-3.webp" alt="About image" width="612" height="653" loading="lazy" decoding="async">
                             </div>
                         </div>
                     </div>
@@ -558,29 +560,29 @@
     ==============================-->
 
 
-    <section class="sec-bg3 vs-shop-wrapper   " data-bg-src="assets/img/shape/bg-00778.png">
+    <section class="sec-bg3 vs-shop-wrapper   " data-bg-src="assets/img/shape/bg-00778.webp">
         <div class="section-title text-center">
-            <div class="sec-icon"><img src="assets/img/icons/sec-icon-2.png" alt="icon"></div>
+            <div class="sec-icon"><img src="assets/img/icons/sec-icon-2.png" alt="icon" width="52" height="39" loading="lazy" decoding="async"></div>
             <span class="sub-title4">Latest Arrivals</span>
             <h2 class="sec-title3">Feature Products</h2>
         </div>
         <div class="container position-relative">
             <div class="filter-menu2 vs-slideTab" data-asnavfor="#shopSlide8440">
                 <button class="tab-btn active" data-bs-toggle="tooltip" data-bs-placement="left" title="Best Seller">
-                    <img src="assets/img/shape/filter-icon-bg-1-2.png" alt="image" class="bg-1">
-                    <img src="assets/img/shape/filter-icon-bg-1-1.png" alt="image" class="bg-2">
+                    <img src="assets/img/shape/filter-icon-bg-1-2.png" alt="image" class="bg-1" width="70" height="69" loading="lazy" decoding="async">
+                    <img src="assets/img/shape/filter-icon-bg-1-1.png" alt="image" class="bg-2" width="70" height="69" loading="lazy" decoding="async">
                     <i class="flaticon-salad"></i> </button>
                 <button class="tab-btn " data-bs-toggle="tooltip" data-bs-placement="left" title="Popular">
-                    <img src="assets/img/shape/filter-icon-bg-1-2.png" alt="image" class="bg-1">
-                    <img src="assets/img/shape/filter-icon-bg-1-1.png" alt="image" class="bg-2">
+                    <img src="assets/img/shape/filter-icon-bg-1-2.png" alt="image" class="bg-1" width="70" height="69" loading="lazy" decoding="async">
+                    <img src="assets/img/shape/filter-icon-bg-1-1.png" alt="image" class="bg-2" width="70" height="69" loading="lazy" decoding="async">
                     <i class="flaticon-salvsadbox-1"></i> </button>
                 <button class="tab-btn " data-bs-toggle="tooltip" data-bs-placement="left" title="Trend">
-                    <img src="assets/img/shape/filter-icon-bg-1-2.png" alt="image" class="bg-1">
-                    <img src="assets/img/shape/filter-icon-bg-1-1.png" alt="image" class="bg-2">
+                    <img src="assets/img/shape/filter-icon-bg-1-2.png" alt="image" class="bg-1" width="70" height="69" loading="lazy" decoding="async">
+                    <img src="assets/img/shape/filter-icon-bg-1-1.png" alt="image" class="bg-2" width="70" height="69" loading="lazy" decoding="async">
                     <i class="flaticon-vegetables"></i> </button>
                 <button class="tab-btn " data-bs-toggle="tooltip" data-bs-placement="left" title="Season">
-                    <img src="assets/img/shape/filter-icon-bg-1-2.png" alt="image" class="bg-1">
-                    <img src="assets/img/shape/filter-icon-bg-1-1.png" alt="image" class="bg-2">
+                    <img src="assets/img/shape/filter-icon-bg-1-2.png" alt="image" class="bg-1" width="70" height="69" loading="lazy" decoding="async">
+                    <img src="assets/img/shape/filter-icon-bg-1-1.png" alt="image" class="bg-2" width="70" height="69" loading="lazy" decoding="async">
                     <i class="flaticon-healthy-food"></i> </button>
             </div>
             <div class="vs-carousel" data-slide-show="1" data-lg-slide-show="1" data-md-slide-show="1" data-sm-slide-show="1" data-fade="true" id="shopSlide8440">
@@ -590,11 +592,11 @@
                         <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3">
                             <div class="vs-product-box3 ">
                                 <div class="product-img">
-                                    <a href="shop-details.html"><img src="assets/img/shop/product-3-1.png" alt="Product Image" class="w-100"></a>
+                                    <a href="shop-details.html"><img src="assets/img/shop/product-3-1.webp" alt="Product Image" class="w-100" width="290" height="260" loading="lazy" decoding="async"></a>
                                     <span class="product-tag2">New</span><span class="product-tag3">Sale</span>
                                 </div>
                                 <div class="actions-btn">
-                                    <a href="assets/img/shop/product-3-1.png" class="icon-btn popup-image"><i class="far fa-search"></i></a>
+                                    <a href="assets/img/shop/product-3-1.webp" class="icon-btn popup-image"><i class="far fa-search"></i></a>
                                     <a href="wishlist.html" class="icon-btn"><i class="fal fa-heart"></i></a>
                                     <a href="cart.html" class="vs-btn style4 cart-btn"><i class="fal fa-cart-plus"></i>Add To Cart</a>
                                 </div>
@@ -609,10 +611,10 @@
                         <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3">
                             <div class="vs-product-box3 ">
                                 <div class="product-img">
-                                    <a href="shop-details.html"><img src="assets/img/shop/product-3-2.png" alt="Product Image" class="w-100"></a>
+                                    <a href="shop-details.html"><img src="assets/img/shop/product-3-2.webp" alt="Product Image" class="w-100" width="290" height="260" loading="lazy" decoding="async"></a>
                                 </div>
                                 <div class="actions-btn">
-                                    <a href="assets/img/shop/product-3-2.png" class="icon-btn popup-image"><i class="far fa-search"></i></a>
+                                    <a href="assets/img/shop/product-3-2.webp" class="icon-btn popup-image"><i class="far fa-search"></i></a>
                                     <a href="wishlist.html" class="icon-btn"><i class="fal fa-heart"></i></a>
                                     <a href="cart.html" class="vs-btn style4 cart-btn"><i class="fal fa-cart-plus"></i>Add To Cart</a>
                                 </div>
@@ -627,11 +629,11 @@
                         <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3">
                             <div class="vs-product-box3 ">
                                 <div class="product-img">
-                                    <a href="shop-details.html"><img src="assets/img/shop/product-3-3.png" alt="Product Image" class="w-100"></a>
+                                    <a href="shop-details.html"><img src="assets/img/shop/product-3-3.webp" alt="Product Image" class="w-100" width="290" height="260" loading="lazy" decoding="async"></a>
                                     <span class="product-tag2">New</span><span class="product-tag3">Sale</span>
                                 </div>
                                 <div class="actions-btn">
-                                    <a href="assets/img/shop/product-3-3.png" class="icon-btn popup-image"><i class="far fa-search"></i></a>
+                                    <a href="assets/img/shop/product-3-3.webp" class="icon-btn popup-image"><i class="far fa-search"></i></a>
                                     <a href="wishlist.html" class="icon-btn"><i class="fal fa-heart"></i></a>
                                     <a href="cart.html" class="vs-btn style4 cart-btn"><i class="fal fa-cart-plus"></i>Add To Cart</a>
                                 </div>
@@ -646,10 +648,10 @@
                         <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3">
                             <div class="vs-product-box3 ">
                                 <div class="product-img">
-                                    <a href="shop-details.html"><img src="assets/img/shop/product-3-4.png" alt="Product Image" class="w-100"></a>
+                                    <a href="shop-details.html"><img src="assets/img/shop/product-3-4.webp" alt="Product Image" class="w-100" width="290" height="260" loading="lazy" decoding="async"></a>
                                 </div>
                                 <div class="actions-btn">
-                                    <a href="assets/img/shop/product-3-4.png" class="icon-btn popup-image"><i class="far fa-search"></i></a>
+                                    <a href="assets/img/shop/product-3-4.webp" class="icon-btn popup-image"><i class="far fa-search"></i></a>
                                     <a href="wishlist.html" class="icon-btn"><i class="fal fa-heart"></i></a>
                                     <a href="cart.html" class="vs-btn style4 cart-btn"><i class="fal fa-cart-plus"></i>Add To Cart</a>
                                 </div>
@@ -664,10 +666,10 @@
                         <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3">
                             <div class="vs-product-box3 ">
                                 <div class="product-img">
-                                    <a href="shop-details.html"><img src="assets/img/shop/product-3-5.png" alt="Product Image" class="w-100"></a>
+                                    <a href="shop-details.html"><img src="assets/img/shop/product-3-5.webp" alt="Product Image" class="w-100" width="290" height="260" loading="lazy" decoding="async"></a>
                                 </div>
                                 <div class="actions-btn">
-                                    <a href="assets/img/shop/product-3-5.png" class="icon-btn popup-image"><i class="far fa-search"></i></a>
+                                    <a href="assets/img/shop/product-3-5.webp" class="icon-btn popup-image"><i class="far fa-search"></i></a>
                                     <a href="wishlist.html" class="icon-btn"><i class="fal fa-heart"></i></a>
                                     <a href="cart.html" class="vs-btn style4 cart-btn"><i class="fal fa-cart-plus"></i>Add To Cart</a>
                                 </div>
@@ -682,11 +684,11 @@
                         <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3">
                             <div class="vs-product-box3 ">
                                 <div class="product-img">
-                                    <a href="shop-details.html"><img src="assets/img/shop/product-3-6.png" alt="Product Image" class="w-100"></a>
+                                    <a href="shop-details.html"><img src="assets/img/shop/product-3-6.webp" alt="Product Image" class="w-100" width="290" height="260" loading="lazy" decoding="async"></a>
                                     <span class="product-tag3">Sale</span>
                                 </div>
                                 <div class="actions-btn">
-                                    <a href="assets/img/shop/product-3-6.png" class="icon-btn popup-image"><i class="far fa-search"></i></a>
+                                    <a href="assets/img/shop/product-3-6.webp" class="icon-btn popup-image"><i class="far fa-search"></i></a>
                                     <a href="wishlist.html" class="icon-btn"><i class="fal fa-heart"></i></a>
                                     <a href="cart.html" class="vs-btn style4 cart-btn"><i class="fal fa-cart-plus"></i>Add To Cart</a>
                                 </div>
@@ -701,10 +703,10 @@
                         <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3">
                             <div class="vs-product-box3 ">
                                 <div class="product-img">
-                                    <a href="shop-details.html"><img src="assets/img/shop/product-3-7.png" alt="Product Image" class="w-100"></a>
+                                    <a href="shop-details.html"><img src="assets/img/shop/product-3-7.webp" alt="Product Image" class="w-100" width="290" height="260" loading="lazy" decoding="async"></a>
                                 </div>
                                 <div class="actions-btn">
-                                    <a href="assets/img/shop/product-3-7.png" class="icon-btn popup-image"><i class="far fa-search"></i></a>
+                                    <a href="assets/img/shop/product-3-7.webp" class="icon-btn popup-image"><i class="far fa-search"></i></a>
                                     <a href="wishlist.html" class="icon-btn"><i class="fal fa-heart"></i></a>
                                     <a href="cart.html" class="vs-btn style4 cart-btn"><i class="fal fa-cart-plus"></i>Add To Cart</a>
                                 </div>
@@ -719,11 +721,11 @@
                         <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3">
                             <div class="vs-product-box3 ">
                                 <div class="product-img">
-                                    <a href="shop-details.html"><img src="assets/img/shop/product-3-8.png" alt="Product Image" class="w-100"></a>
+                                    <a href="shop-details.html"><img src="assets/img/shop/product-3-8.webp" alt="Product Image" class="w-100" width="290" height="260" loading="lazy" decoding="async"></a>
                                     <span class="product-tag3">Sale</span>
                                 </div>
                                 <div class="actions-btn">
-                                    <a href="assets/img/shop/product-3-8.png" class="icon-btn popup-image"><i class="far fa-search"></i></a>
+                                    <a href="assets/img/shop/product-3-8.webp" class="icon-btn popup-image"><i class="far fa-search"></i></a>
                                     <a href="wishlist.html" class="icon-btn"><i class="fal fa-heart"></i></a>
                                     <a href="cart.html" class="vs-btn style4 cart-btn"><i class="fal fa-cart-plus"></i>Add To Cart</a>
                                 </div>
@@ -743,11 +745,11 @@
                         <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3">
                             <div class="vs-product-box3 ">
                                 <div class="product-img">
-                                    <a href="shop-details.html"><img src="assets/img/shop/product-3-9.png" alt="Product Image" class="w-100"></a>
+                                    <a href="shop-details.html"><img src="assets/img/shop/product-3-9.webp" alt="Product Image" class="w-100" width="290" height="260" loading="lazy" decoding="async"></a>
                                     <span class="product-tag3">Sale</span>
                                 </div>
                                 <div class="actions-btn">
-                                    <a href="assets/img/shop/product-3-9.png" class="icon-btn popup-image"><i class="far fa-search"></i></a>
+                                    <a href="assets/img/shop/product-3-9.webp" class="icon-btn popup-image"><i class="far fa-search"></i></a>
                                     <a href="wishlist.html" class="icon-btn"><i class="fal fa-heart"></i></a>
                                     <a href="cart.html" class="vs-btn style4 cart-btn"><i class="fal fa-cart-plus"></i>Add To Cart</a>
                                 </div>
@@ -762,11 +764,11 @@
                         <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3">
                             <div class="vs-product-box3 ">
                                 <div class="product-img">
-                                    <a href="shop-details.html"><img src="assets/img/shop/product-3-10.png" alt="Product Image" class="w-100"></a>
+                                    <a href="shop-details.html"><img src="assets/img/shop/product-3-10.webp" alt="Product Image" class="w-100" width="290" height="260" loading="lazy" decoding="async"></a>
                                     <span class="product-tag2">New</span>
                                 </div>
                                 <div class="actions-btn">
-                                    <a href="assets/img/shop/product-3-10.png" class="icon-btn popup-image"><i class="far fa-search"></i></a>
+                                    <a href="assets/img/shop/product-3-10.webp" class="icon-btn popup-image"><i class="far fa-search"></i></a>
                                     <a href="wishlist.html" class="icon-btn"><i class="fal fa-heart"></i></a>
                                     <a href="cart.html" class="vs-btn style4 cart-btn"><i class="fal fa-cart-plus"></i>Add To Cart</a>
                                 </div>
@@ -781,10 +783,10 @@
                         <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3">
                             <div class="vs-product-box3 ">
                                 <div class="product-img">
-                                    <a href="shop-details.html"><img src="assets/img/shop/product-3-11.png" alt="Product Image" class="w-100"></a>
+                                    <a href="shop-details.html"><img src="assets/img/shop/product-3-11.webp" alt="Product Image" class="w-100" width="290" height="260" loading="lazy" decoding="async"></a>
                                 </div>
                                 <div class="actions-btn">
-                                    <a href="assets/img/shop/product-3-11.png" class="icon-btn popup-image"><i class="far fa-search"></i></a>
+                                    <a href="assets/img/shop/product-3-11.webp" class="icon-btn popup-image"><i class="far fa-search"></i></a>
                                     <a href="wishlist.html" class="icon-btn"><i class="fal fa-heart"></i></a>
                                     <a href="cart.html" class="vs-btn style4 cart-btn"><i class="fal fa-cart-plus"></i>Add To Cart</a>
                                 </div>
@@ -799,10 +801,10 @@
                         <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3">
                             <div class="vs-product-box3 ">
                                 <div class="product-img">
-                                    <a href="shop-details.html"><img src="assets/img/shop/product-3-12.png" alt="Product Image" class="w-100"></a>
+                                    <a href="shop-details.html"><img src="assets/img/shop/product-3-12.webp" alt="Product Image" class="w-100" width="290" height="260" loading="lazy" decoding="async"></a>
                                 </div>
                                 <div class="actions-btn">
-                                    <a href="assets/img/shop/product-3-12.png" class="icon-btn popup-image"><i class="far fa-search"></i></a>
+                                    <a href="assets/img/shop/product-3-12.webp" class="icon-btn popup-image"><i class="far fa-search"></i></a>
                                     <a href="wishlist.html" class="icon-btn"><i class="fal fa-heart"></i></a>
                                     <a href="cart.html" class="vs-btn style4 cart-btn"><i class="fal fa-cart-plus"></i>Add To Cart</a>
                                 </div>
@@ -817,10 +819,10 @@
                         <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3">
                             <div class="vs-product-box3 ">
                                 <div class="product-img">
-                                    <a href="shop-details.html"><img src="assets/img/shop/product-3-13.png" alt="Product Image" class="w-100"></a>
+                                    <a href="shop-details.html"><img src="assets/img/shop/product-3-13.webp" alt="Product Image" class="w-100" width="290" height="260" loading="lazy" decoding="async"></a>
                                 </div>
                                 <div class="actions-btn">
-                                    <a href="assets/img/shop/product-3-13.png" class="icon-btn popup-image"><i class="far fa-search"></i></a>
+                                    <a href="assets/img/shop/product-3-13.webp" class="icon-btn popup-image"><i class="far fa-search"></i></a>
                                     <a href="wishlist.html" class="icon-btn"><i class="fal fa-heart"></i></a>
                                     <a href="cart.html" class="vs-btn style4 cart-btn"><i class="fal fa-cart-plus"></i>Add To Cart</a>
                                 </div>
@@ -835,11 +837,11 @@
                         <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3">
                             <div class="vs-product-box3 ">
                                 <div class="product-img">
-                                    <a href="shop-details.html"><img src="assets/img/shop/product-3-14.png" alt="Product Image" class="w-100"></a>
+                                    <a href="shop-details.html"><img src="assets/img/shop/product-3-14.webp" alt="Product Image" class="w-100" width="290" height="260" loading="lazy" decoding="async"></a>
                                     <span class="product-tag3">Sale</span>
                                 </div>
                                 <div class="actions-btn">
-                                    <a href="assets/img/shop/product-3-14.png" class="icon-btn popup-image"><i class="far fa-search"></i></a>
+                                    <a href="assets/img/shop/product-3-14.webp" class="icon-btn popup-image"><i class="far fa-search"></i></a>
                                     <a href="wishlist.html" class="icon-btn"><i class="fal fa-heart"></i></a>
                                     <a href="cart.html" class="vs-btn style4 cart-btn"><i class="fal fa-cart-plus"></i>Add To Cart</a>
                                 </div>
@@ -854,11 +856,11 @@
                         <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3">
                             <div class="vs-product-box3 ">
                                 <div class="product-img">
-                                    <a href="shop-details.html"><img src="assets/img/shop/product-3-15.png" alt="Product Image" class="w-100"></a>
+                                    <a href="shop-details.html"><img src="assets/img/shop/product-3-15.webp" alt="Product Image" class="w-100" width="290" height="260" loading="lazy" decoding="async"></a>
                                     <span class="product-tag2">Sale</span>
                                 </div>
                                 <div class="actions-btn">
-                                    <a href="assets/img/shop/product-3-15.png" class="icon-btn popup-image"><i class="far fa-search"></i></a>
+                                    <a href="assets/img/shop/product-3-15.webp" class="icon-btn popup-image"><i class="far fa-search"></i></a>
                                     <a href="wishlist.html" class="icon-btn"><i class="fal fa-heart"></i></a>
                                     <a href="cart.html" class="vs-btn style4 cart-btn"><i class="fal fa-cart-plus"></i>Add To Cart</a>
                                 </div>
@@ -873,11 +875,11 @@
                         <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3">
                             <div class="vs-product-box3 ">
                                 <div class="product-img">
-                                    <a href="shop-details.html"><img src="assets/img/shop/product-3-16.png" alt="Product Image" class="w-100"></a>
+                                    <a href="shop-details.html"><img src="assets/img/shop/product-3-16.webp" alt="Product Image" class="w-100" width="290" height="260" loading="lazy" decoding="async"></a>
                                     <span class="product-tag3">Sale</span>
                                 </div>
                                 <div class="actions-btn">
-                                    <a href="assets/img/shop/product-3-16.png" class="icon-btn popup-image"><i class="far fa-search"></i></a>
+                                    <a href="assets/img/shop/product-3-16.webp" class="icon-btn popup-image"><i class="far fa-search"></i></a>
                                     <a href="wishlist.html" class="icon-btn"><i class="fal fa-heart"></i></a>
                                     <a href="cart.html" class="vs-btn style4 cart-btn"><i class="fal fa-cart-plus"></i>Add To Cart</a>
                                 </div>
@@ -897,10 +899,10 @@
                         <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3">
                             <div class="vs-product-box3 ">
                                 <div class="product-img">
-                                    <a href="shop-details.html"><img src="assets/img/shop/product-3-17.png" alt="Product Image" class="w-100"></a>
+                                    <a href="shop-details.html"><img src="assets/img/shop/product-3-17.webp" alt="Product Image" class="w-100" width="290" height="260" loading="lazy" decoding="async"></a>
                                 </div>
                                 <div class="actions-btn">
-                                    <a href="assets/img/shop/product-3-17.png" class="icon-btn popup-image"><i class="far fa-search"></i></a>
+                                    <a href="assets/img/shop/product-3-17.webp" class="icon-btn popup-image"><i class="far fa-search"></i></a>
                                     <a href="wishlist.html" class="icon-btn"><i class="fal fa-heart"></i></a>
                                     <a href="cart.html" class="vs-btn style4 cart-btn"><i class="fal fa-cart-plus"></i>Add To Cart</a>
                                 </div>
@@ -915,11 +917,11 @@
                         <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3">
                             <div class="vs-product-box3 ">
                                 <div class="product-img">
-                                    <a href="shop-details.html"><img src="assets/img/shop/product-3-18.png" alt="Product Image" class="w-100"></a>
+                                    <a href="shop-details.html"><img src="assets/img/shop/product-3-18.webp" alt="Product Image" class="w-100" width="290" height="260" loading="lazy" decoding="async"></a>
                                     <span class="product-tag3">Sale</span>
                                 </div>
                                 <div class="actions-btn">
-                                    <a href="assets/img/shop/product-3-18.png" class="icon-btn popup-image"><i class="far fa-search"></i></a>
+                                    <a href="assets/img/shop/product-3-18.webp" class="icon-btn popup-image"><i class="far fa-search"></i></a>
                                     <a href="wishlist.html" class="icon-btn"><i class="fal fa-heart"></i></a>
                                     <a href="cart.html" class="vs-btn style4 cart-btn"><i class="fal fa-cart-plus"></i>Add To Cart</a>
                                 </div>
@@ -934,10 +936,10 @@
                         <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3">
                             <div class="vs-product-box3 ">
                                 <div class="product-img">
-                                    <a href="shop-details.html"><img src="assets/img/shop/product-3-19.png" alt="Product Image" class="w-100"></a>
+                                    <a href="shop-details.html"><img src="assets/img/shop/product-3-19.webp" alt="Product Image" class="w-100" width="290" height="260" loading="lazy" decoding="async"></a>
                                 </div>
                                 <div class="actions-btn">
-                                    <a href="assets/img/shop/product-3-19.png" class="icon-btn popup-image"><i class="far fa-search"></i></a>
+                                    <a href="assets/img/shop/product-3-19.webp" class="icon-btn popup-image"><i class="far fa-search"></i></a>
                                     <a href="wishlist.html" class="icon-btn"><i class="fal fa-heart"></i></a>
                                     <a href="cart.html" class="vs-btn style4 cart-btn"><i class="fal fa-cart-plus"></i>Add To Cart</a>
                                 </div>
@@ -952,11 +954,11 @@
                         <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3">
                             <div class="vs-product-box3 ">
                                 <div class="product-img">
-                                    <a href="shop-details.html"><img src="assets/img/shop/product-3-20.png" alt="Product Image" class="w-100"></a>
+                                    <a href="shop-details.html"><img src="assets/img/shop/product-3-20.webp" alt="Product Image" class="w-100" width="290" height="260" loading="lazy" decoding="async"></a>
                                     <span class="product-tag3">Sale</span>
                                 </div>
                                 <div class="actions-btn">
-                                    <a href="assets/img/shop/product-3-20.png" class="icon-btn popup-image"><i class="far fa-search"></i></a>
+                                    <a href="assets/img/shop/product-3-20.webp" class="icon-btn popup-image"><i class="far fa-search"></i></a>
                                     <a href="wishlist.html" class="icon-btn"><i class="fal fa-heart"></i></a>
                                     <a href="cart.html" class="vs-btn style4 cart-btn"><i class="fal fa-cart-plus"></i>Add To Cart</a>
                                 </div>
@@ -971,10 +973,10 @@
                         <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3">
                             <div class="vs-product-box3 ">
                                 <div class="product-img">
-                                    <a href="shop-details.html"><img src="assets/img/shop/product-3-21.png" alt="Product Image" class="w-100"></a>
+                                    <a href="shop-details.html"><img src="assets/img/shop/product-3-21.webp" alt="Product Image" class="w-100" width="290" height="260" loading="lazy" decoding="async"></a>
                                 </div>
                                 <div class="actions-btn">
-                                    <a href="assets/img/shop/product-3-21.png" class="icon-btn popup-image"><i class="far fa-search"></i></a>
+                                    <a href="assets/img/shop/product-3-21.webp" class="icon-btn popup-image"><i class="far fa-search"></i></a>
                                     <a href="wishlist.html" class="icon-btn"><i class="fal fa-heart"></i></a>
                                     <a href="cart.html" class="vs-btn style4 cart-btn"><i class="fal fa-cart-plus"></i>Add To Cart</a>
                                 </div>
@@ -989,11 +991,11 @@
                         <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3">
                             <div class="vs-product-box3 ">
                                 <div class="product-img">
-                                    <a href="shop-details.html"><img src="assets/img/shop/product-3-22.png" alt="Product Image" class="w-100"></a>
+                                    <a href="shop-details.html"><img src="assets/img/shop/product-3-22.webp" alt="Product Image" class="w-100" width="290" height="260" loading="lazy" decoding="async"></a>
                                     <span class="product-tag2">New</span>
                                 </div>
                                 <div class="actions-btn">
-                                    <a href="assets/img/shop/product-3-22.png" class="icon-btn popup-image"><i class="far fa-search"></i></a>
+                                    <a href="assets/img/shop/product-3-22.webp" class="icon-btn popup-image"><i class="far fa-search"></i></a>
                                     <a href="wishlist.html" class="icon-btn"><i class="fal fa-heart"></i></a>
                                     <a href="cart.html" class="vs-btn style4 cart-btn"><i class="fal fa-cart-plus"></i>Add To Cart</a>
                                 </div>
@@ -1008,11 +1010,11 @@
                         <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3">
                             <div class="vs-product-box3 ">
                                 <div class="product-img">
-                                    <a href="shop-details.html"><img src="assets/img/shop/product-3-23.png" alt="Product Image" class="w-100"></a>
+                                    <a href="shop-details.html"><img src="assets/img/shop/product-3-23.webp" alt="Product Image" class="w-100" width="290" height="260" loading="lazy" decoding="async"></a>
                                     <span class="product-tag1">Hot</span>
                                 </div>
                                 <div class="actions-btn">
-                                    <a href="assets/img/shop/product-3-23.png" class="icon-btn popup-image"><i class="far fa-search"></i></a>
+                                    <a href="assets/img/shop/product-3-23.webp" class="icon-btn popup-image"><i class="far fa-search"></i></a>
                                     <a href="wishlist.html" class="icon-btn"><i class="fal fa-heart"></i></a>
                                     <a href="cart.html" class="vs-btn style4 cart-btn"><i class="fal fa-cart-plus"></i>Add To Cart</a>
                                 </div>
@@ -1027,11 +1029,11 @@
                         <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3">
                             <div class="vs-product-box3 ">
                                 <div class="product-img">
-                                    <a href="shop-details.html"><img src="assets/img/shop/product-3-24.png" alt="Product Image" class="w-100"></a>
+                                    <a href="shop-details.html"><img src="assets/img/shop/product-3-24.webp" alt="Product Image" class="w-100" width="290" height="260" loading="lazy" decoding="async"></a>
                                     <span class="product-tag3">Sale</span>
                                 </div>
                                 <div class="actions-btn">
-                                    <a href="assets/img/shop/product-3-24.png" class="icon-btn popup-image"><i class="far fa-search"></i></a>
+                                    <a href="assets/img/shop/product-3-24.webp" class="icon-btn popup-image"><i class="far fa-search"></i></a>
                                     <a href="wishlist.html" class="icon-btn"><i class="fal fa-heart"></i></a>
                                     <a href="cart.html" class="vs-btn style4 cart-btn"><i class="fal fa-cart-plus"></i>Add To Cart</a>
                                 </div>
@@ -1051,10 +1053,10 @@
                         <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3">
                             <div class="vs-product-box3 ">
                                 <div class="product-img">
-                                    <a href="shop-details.html"><img src="assets/img/shop/product-3-25.png" alt="Product Image" class="w-100"></a>
+                                    <a href="shop-details.html"><img src="assets/img/shop/product-3-25.webp" alt="Product Image" class="w-100" width="290" height="260" loading="lazy" decoding="async"></a>
                                 </div>
                                 <div class="actions-btn">
-                                    <a href="assets/img/shop/product-3-25.png" class="icon-btn popup-image"><i class="far fa-search"></i></a>
+                                    <a href="assets/img/shop/product-3-25.webp" class="icon-btn popup-image"><i class="far fa-search"></i></a>
                                     <a href="wishlist.html" class="icon-btn"><i class="fal fa-heart"></i></a>
                                     <a href="cart.html" class="vs-btn style4 cart-btn"><i class="fal fa-cart-plus"></i>Add To Cart</a>
                                 </div>
@@ -1069,11 +1071,11 @@
                         <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3">
                             <div class="vs-product-box3 ">
                                 <div class="product-img">
-                                    <a href="shop-details.html"><img src="assets/img/shop/product-3-26.png" alt="Product Image" class="w-100"></a>
+                                    <a href="shop-details.html"><img src="assets/img/shop/product-3-26.webp" alt="Product Image" class="w-100" width="290" height="260" loading="lazy" decoding="async"></a>
                                     <span class="product-tag3">Sale</span>
                                 </div>
                                 <div class="actions-btn">
-                                    <a href="assets/img/shop/product-3-26.png" class="icon-btn popup-image"><i class="far fa-search"></i></a>
+                                    <a href="assets/img/shop/product-3-26.webp" class="icon-btn popup-image"><i class="far fa-search"></i></a>
                                     <a href="wishlist.html" class="icon-btn"><i class="fal fa-heart"></i></a>
                                     <a href="cart.html" class="vs-btn style4 cart-btn"><i class="fal fa-cart-plus"></i>Add To Cart</a>
                                 </div>
@@ -1088,11 +1090,11 @@
                         <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3">
                             <div class="vs-product-box3 ">
                                 <div class="product-img">
-                                    <a href="shop-details.html"><img src="assets/img/shop/product-3-27.png" alt="Product Image" class="w-100"></a>
+                                    <a href="shop-details.html"><img src="assets/img/shop/product-3-27.webp" alt="Product Image" class="w-100" width="290" height="260" loading="lazy" decoding="async"></a>
                                     <span class="product-tag3">Sale</span>
                                 </div>
                                 <div class="actions-btn">
-                                    <a href="assets/img/shop/product-3-27.png" class="icon-btn popup-image"><i class="far fa-search"></i></a>
+                                    <a href="assets/img/shop/product-3-27.webp" class="icon-btn popup-image"><i class="far fa-search"></i></a>
                                     <a href="wishlist.html" class="icon-btn"><i class="fal fa-heart"></i></a>
                                     <a href="cart.html" class="vs-btn style4 cart-btn"><i class="fal fa-cart-plus"></i>Add To Cart</a>
                                 </div>
@@ -1107,10 +1109,10 @@
                         <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3">
                             <div class="vs-product-box3 ">
                                 <div class="product-img">
-                                    <a href="shop-details.html"><img src="assets/img/shop/product-3-28.png" alt="Product Image" class="w-100"></a>
+                                    <a href="shop-details.html"><img src="assets/img/shop/product-3-28.webp" alt="Product Image" class="w-100" width="290" height="260" loading="lazy" decoding="async"></a>
                                 </div>
                                 <div class="actions-btn">
-                                    <a href="assets/img/shop/product-3-28.png" class="icon-btn popup-image"><i class="far fa-search"></i></a>
+                                    <a href="assets/img/shop/product-3-28.webp" class="icon-btn popup-image"><i class="far fa-search"></i></a>
                                     <a href="wishlist.html" class="icon-btn"><i class="fal fa-heart"></i></a>
                                     <a href="cart.html" class="vs-btn style4 cart-btn"><i class="fal fa-cart-plus"></i>Add To Cart</a>
                                 </div>
@@ -1125,11 +1127,11 @@
                         <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3">
                             <div class="vs-product-box3 ">
                                 <div class="product-img">
-                                    <a href="shop-details.html"><img src="assets/img/shop/product-3-29.png" alt="Product Image" class="w-100"></a>
+                                    <a href="shop-details.html"><img src="assets/img/shop/product-3-29.webp" alt="Product Image" class="w-100" width="290" height="260" loading="lazy" decoding="async"></a>
                                     <span class="product-tag3">Sale</span>
                                 </div>
                                 <div class="actions-btn">
-                                    <a href="assets/img/shop/product-3-29.png" class="icon-btn popup-image"><i class="far fa-search"></i></a>
+                                    <a href="assets/img/shop/product-3-29.webp" class="icon-btn popup-image"><i class="far fa-search"></i></a>
                                     <a href="wishlist.html" class="icon-btn"><i class="fal fa-heart"></i></a>
                                     <a href="cart.html" class="vs-btn style4 cart-btn"><i class="fal fa-cart-plus"></i>Add To Cart</a>
                                 </div>
@@ -1144,10 +1146,10 @@
                         <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3">
                             <div class="vs-product-box3 ">
                                 <div class="product-img">
-                                    <a href="shop-details.html"><img src="assets/img/shop/product-3-30.png" alt="Product Image" class="w-100"></a>
+                                    <a href="shop-details.html"><img src="assets/img/shop/product-3-30.webp" alt="Product Image" class="w-100" width="290" height="260" loading="lazy" decoding="async"></a>
                                 </div>
                                 <div class="actions-btn">
-                                    <a href="assets/img/shop/product-3-30.png" class="icon-btn popup-image"><i class="far fa-search"></i></a>
+                                    <a href="assets/img/shop/product-3-30.webp" class="icon-btn popup-image"><i class="far fa-search"></i></a>
                                     <a href="wishlist.html" class="icon-btn"><i class="fal fa-heart"></i></a>
                                     <a href="cart.html" class="vs-btn style4 cart-btn"><i class="fal fa-cart-plus"></i>Add To Cart</a>
                                 </div>
@@ -1162,11 +1164,11 @@
                         <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3">
                             <div class="vs-product-box3 ">
                                 <div class="product-img">
-                                    <a href="shop-details.html"><img src="assets/img/shop/product-3-31.png" alt="Product Image" class="w-100"></a>
+                                    <a href="shop-details.html"><img src="assets/img/shop/product-3-31.webp" alt="Product Image" class="w-100" width="290" height="260" loading="lazy" decoding="async"></a>
                                     <span class="product-tag3">Sale</span>
                                 </div>
                                 <div class="actions-btn">
-                                    <a href="assets/img/shop/product-3-31.png" class="icon-btn popup-image"><i class="far fa-search"></i></a>
+                                    <a href="assets/img/shop/product-3-31.webp" class="icon-btn popup-image"><i class="far fa-search"></i></a>
                                     <a href="wishlist.html" class="icon-btn"><i class="fal fa-heart"></i></a>
                                     <a href="cart.html" class="vs-btn style4 cart-btn"><i class="fal fa-cart-plus"></i>Add To Cart</a>
                                 </div>
@@ -1181,11 +1183,11 @@
                         <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3">
                             <div class="vs-product-box3 ">
                                 <div class="product-img">
-                                    <a href="shop-details.html"><img src="assets/img/shop/product-3-32.png" alt="Product Image" class="w-100"></a>
+                                    <a href="shop-details.html"><img src="assets/img/shop/product-3-32.webp" alt="Product Image" class="w-100" width="290" height="260" loading="lazy" decoding="async"></a>
                                     <span class="product-tag1">Hot</span>
                                 </div>
                                 <div class="actions-btn">
-                                    <a href="assets/img/shop/product-3-32.png" class="icon-btn popup-image"><i class="far fa-search"></i></a>
+                                    <a href="assets/img/shop/product-3-32.webp" class="icon-btn popup-image"><i class="far fa-search"></i></a>
                                     <a href="wishlist.html" class="icon-btn"><i class="fal fa-heart"></i></a>
                                     <a href="cart.html" class="vs-btn style4 cart-btn"><i class="fal fa-cart-plus"></i>Add To Cart</a>
                                 </div>
@@ -1211,7 +1213,7 @@
     <section class=" mb-60 mb-xl-0">
         <div class="container">
             <div class="section-title text-center">
-                <div class="sec-icon"><img src="assets/img/icons/sec-icon-2.png" alt="icon"></div>
+                <div class="sec-icon"><img src="assets/img/icons/sec-icon-2.png" alt="icon" width="52" height="39" loading="lazy" decoding="async"></div>
                 <span class="sub-title4">Latest Arrivals</span>
                 <h2 class="sec-title3">Deals Of the Day</h2>
             </div>
@@ -1231,7 +1233,7 @@
                 </div>
                 <div class="col-lg order-1 order-lg-2">
                     <div class="img-box3">
-                        <img src="assets/img/about/ab-7-1.png" alt="About Image">
+                        <img src="assets/img/about/ab-7-1.webp" alt="About Image" width="709" height="703" loading="lazy" decoding="async">
                     </div>
                 </div>
                 <div class="col-lg-auto order-2 order-lg-3">
@@ -1255,28 +1257,28 @@
             <div class="row gx-10">
                 <div class="col-md-6 col-lg-3">
                     <div class="feature-style1">
-                        <div class="feature-icon"><img src="assets/img/icons/feature-icon-1-1.png" alt="icon"></div>
+                        <div class="feature-icon"><img src="assets/img/icons/feature-icon-1-1.png" alt="icon" width="70" height="69" loading="lazy" decoding="async"></div>
                         <h3 class="feature-title">Easy Returns</h3>
                         <p class="feature-text">No Questions Asked</p>
                     </div>
                 </div>
                 <div class="col-md-6 col-lg-3">
                     <div class="feature-style1">
-                        <div class="feature-icon"><img src="assets/img/icons/feature-icon-1-2.png" alt="icon"></div>
+                        <div class="feature-icon"><img src="assets/img/icons/feature-icon-1-2.png" alt="icon" width="70" height="69" loading="lazy" decoding="async"></div>
                         <h3 class="feature-title">Certified Organic</h3>
                         <p class="feature-text">100% Guarantee</p>
                     </div>
                 </div>
                 <div class="col-md-6 col-lg-3">
                     <div class="feature-style1">
-                        <div class="feature-icon"><img src="assets/img/icons/feature-icon-1-3.png" alt="icon"></div>
+                        <div class="feature-icon"><img src="assets/img/icons/feature-icon-1-3.png" alt="icon" width="70" height="69" loading="lazy" decoding="async"></div>
                         <h3 class="feature-title">Huge Savings</h3>
                         <p class="feature-text">At Lowest Price</p>
                     </div>
                 </div>
                 <div class="col-md-6 col-lg-3">
                     <div class="feature-style1">
-                        <div class="feature-icon"><img src="assets/img/icons/feature-icon-1-4.png" alt="icon"></div>
+                        <div class="feature-icon"><img src="assets/img/icons/feature-icon-1-4.png" alt="icon" width="70" height="69" loading="lazy" decoding="async"></div>
                         <h3 class="feature-title">Easy Returnsz</h3>
                         <p class="feature-text">No Questions Asked</p>
                     </div>
@@ -1288,17 +1290,17 @@
     Popular Package Box
     ==============================-->
     <section class="position-relative space-top space-md-bottom">
-        <div class="sec-bg4" data-bg-src="assets/img/shape/bg-00779.png"></div>
+        <div class="sec-bg4" data-bg-src="assets/img/shape/bg-00779.webp"></div>
         <div class="container">
             <div class="section-title text-center">
-                <div class="sec-icon"><img src="assets/img/icons/sec-icon-2.png" alt="icon"></div>
+                <div class="sec-icon"><img src="assets/img/icons/sec-icon-2.png" alt="icon" width="52" height="39" loading="lazy" decoding="async"></div>
                 <span class="sub-title4">Box contents change weekly</span>
                 <h2 class="sec-title3">Our Most Popular Boxes</h2>
             </div>
             <div class="row vs-carousel" data-slide-show="3" data-lg-slide-show="3" data-sm-slide-show="1">
                 <div class="col-xl-4">
                     <div class="package-style1">
-                        <div class="package-img"><img src="assets/img/package/p-1-1.webp" alt="Package"></div>
+                        <div class="package-img"><img src="assets/img/package/p-1-1.webp" alt="Package" loading="lazy" decoding="async"></div>
                         <div class="package-quantity" data-bg-src="assets/img/shape/pack-bg.png">
                             <div class="number">12</div>
                             <div class="label">Organic Varieties</div>
@@ -1320,7 +1322,7 @@
                 </div>
                 <div class="col-xl-4">
                     <div class="package-style1">
-                        <div class="package-img"><img src="assets/img/package/p-1-2.webp" alt="Package"></div>
+                        <div class="package-img"><img src="assets/img/package/p-1-2.webp" alt="Package" loading="lazy" decoding="async"></div>
                         <div class="package-quantity" data-bg-src="assets/img/shape/pack-bg.png">
                             <div class="number">08</div>
                             <div class="label">Organic Varieties</div>
@@ -1342,7 +1344,7 @@
                 </div>
                 <div class="col-xl-4">
                     <div class="package-style1">
-                        <div class="package-img"><img src="assets/img/package/p-1-3.webp" alt="Package"></div>
+                        <div class="package-img"><img src="assets/img/package/p-1-3.webp" alt="Package" loading="lazy" decoding="async"></div>
                         <div class="package-quantity" data-bg-src="assets/img/shape/pack-bg.png">
                             <div class="number">14</div>
                             <div class="label">Organic Varieties</div>
@@ -1364,7 +1366,7 @@
                 </div>
                 <div class="col-xl-4">
                     <div class="package-style1">
-                        <div class="package-img"><img src="assets/img/package/p-1-4.webp" alt="Package"></div>
+                        <div class="package-img"><img src="assets/img/package/p-1-4.webp" alt="Package" loading="lazy" decoding="async"></div>
                         <div class="package-quantity" data-bg-src="assets/img/shape/pack-bg.png">
                             <div class="number">19</div>
                             <div class="label">Organic Varieties</div>
@@ -1395,8 +1397,8 @@
             <div class="row">
                 <div class="col-xl-6 mb-40 mb-xl-0">
                     <div class="img-box4">
-                        <div class="img-1"><img src="assets/img/about/ab-8-1.png" alt="About Image"></div>
-                        <div class="img-2"><img src="assets/img/about/ab-8-2.png" alt="About Image"></div>
+                        <div class="img-1"><img src="assets/img/about/ab-8-1.webp" alt="About Image" width="559" height="572" loading="lazy" decoding="async"></div>
+                        <div class="img-2"><img src="assets/img/about/ab-8-2.webp" alt="About Image" width="504" height="294" loading="lazy" decoding="async"></div>
                         <div class="content">
                             <div class="title">Natural Organic</div>
                             <div class="text">Alienum phaedrum torquat os nec eu, vis detrax.</div>
@@ -1412,11 +1414,11 @@
                             <div class="col-md-6">
                                 <div class="vs-product-box3 style2">
                                     <div class="product-img">
-                                        <a href="shop-details.html"><img src="assets/img/shop/product-3-32.png" alt="Product Image" class="w-100"></a>
+                                        <a href="shop-details.html"><img src="assets/img/shop/product-3-32.webp" alt="Product Image" class="w-100" width="290" height="260" loading="lazy" decoding="async"></a>
                                         <span class="product-tag1">Hot</span>
                                     </div>
                                     <div class="actions-btn">
-                                        <a href="assets/img/shop/product-3-32.png" class="icon-btn popup-image"><i class="far fa-search"></i></a>
+                                        <a href="assets/img/shop/product-3-32.webp" class="icon-btn popup-image"><i class="far fa-search"></i></a>
                                         <a href="wishlist.html" class="icon-btn"><i class="fal fa-heart"></i></a>
                                         <a href="cart.html" class="vs-btn style4 cart-btn"><i class="fal fa-cart-plus"></i>Add To Cart</a>
                                     </div>
@@ -1431,10 +1433,10 @@
                             <div class="col-md-6">
                                 <div class="vs-product-box3 style2">
                                     <div class="product-img">
-                                        <a href="shop-details.html"><img src="assets/img/shop/product-3-13.png" alt="Product Image" class="w-100"></a>
+                                        <a href="shop-details.html"><img src="assets/img/shop/product-3-13.webp" alt="Product Image" class="w-100" width="290" height="260" loading="lazy" decoding="async"></a>
                                     </div>
                                     <div class="actions-btn">
-                                        <a href="assets/img/shop/product-3-13.png" class="icon-btn popup-image"><i class="far fa-search"></i></a>
+                                        <a href="assets/img/shop/product-3-13.webp" class="icon-btn popup-image"><i class="far fa-search"></i></a>
                                         <a href="wishlist.html" class="icon-btn"><i class="fal fa-heart"></i></a>
                                         <a href="cart.html" class="vs-btn style4 cart-btn"><i class="fal fa-cart-plus"></i>Add To Cart</a>
                                     </div>
@@ -1457,8 +1459,8 @@
     ==============================-->
     <section class="  space" data-bg-src="assets/img/bg/newsletter-bg-1-2.webp">
         <div class="container">
-            <div class="newsletter-style2" data-bg-src="assets/img/shape/newsletter-bg-1-1.png">
-                <div class="shape-1 d-none d-md-block"><img src="assets/img/shape/newsletter-s-008.png" alt="shape"></div>
+            <div class="newsletter-style2" data-bg-src="assets/img/shape/newsletter-bg-1-1.webp">
+                <div class="shape-1 d-none d-md-block"><img src="assets/img/shape/newsletter-s-008.webp" alt="shape" width="1268" height="565" loading="lazy" decoding="async"></div>
                 <span class="sub-title4">Subscribe and Get new Tips and Updates</span>
                 <h2 class="sec-title3">Subscribe & Get 10% Off</h2>
                 <div class="form-group">
@@ -1474,7 +1476,7 @@
     <section class="vs-blog-wrapper space-top space-md-bottom">
         <div class="container">
             <div class="section-title text-center">
-                <div class="sec-icon"><img src="assets/img/icons/sec-icon-2.png" alt="icon"></div>
+                <div class="sec-icon"><img src="assets/img/icons/sec-icon-2.png" alt="icon" width="52" height="39" loading="lazy" decoding="async"></div>
                 <span class="sub-title4">Tips & News</span>
                 <h2 class="sec-title3">Recent Articles</h2>
             </div>
@@ -1482,7 +1484,7 @@
                 <div class="col-xl-4">
                     <div class="vs-blog blog-style1">
                         <div class="blog-img image-scale-hover">
-                            <a href="blog-details.html"><img src="assets/img/blog/blog-4-1.webp" alt="Blog Image" class="w-100"></a>
+                            <a href="blog-details.html"><img src="assets/img/blog/blog-4-1.webp" alt="Blog Image" class="w-100" loading="lazy" decoding="async"></a>
                         </div>
                         <div class="blog-content">
                             <div class="tags">
@@ -1501,7 +1503,7 @@
                 <div class="col-xl-4">
                     <div class="vs-blog blog-style1">
                         <div class="blog-img image-scale-hover">
-                            <a href="blog-details.html"><img src="assets/img/blog/blog-4-2.webp" alt="Blog Image" class="w-100"></a>
+                            <a href="blog-details.html"><img src="assets/img/blog/blog-4-2.webp" alt="Blog Image" class="w-100" loading="lazy" decoding="async"></a>
                         </div>
                         <div class="blog-content">
                             <div class="tags">
@@ -1520,7 +1522,7 @@
                 <div class="col-xl-4">
                     <div class="vs-blog blog-style1">
                         <div class="blog-img image-scale-hover">
-                            <a href="blog-details.html"><img src="assets/img/blog/blog-4-3.webp" alt="Blog Image" class="w-100"></a>
+                            <a href="blog-details.html"><img src="assets/img/blog/blog-4-3.webp" alt="Blog Image" class="w-100" loading="lazy" decoding="async"></a>
                         </div>
                         <div class="blog-content">
                             <div class="tags">
@@ -1539,7 +1541,7 @@
                 <div class="col-xl-4">
                     <div class="vs-blog blog-style1">
                         <div class="blog-img image-scale-hover">
-                            <a href="blog-details.html"><img src="assets/img/blog/blog-4-4.webp" alt="Blog Image" class="w-100"></a>
+                            <a href="blog-details.html"><img src="assets/img/blog/blog-4-4.webp" alt="Blog Image" class="w-100" loading="lazy" decoding="async"></a>
                         </div>
                         <div class="blog-content">
                             <div class="tags">
@@ -1565,16 +1567,16 @@
         <div class="container">
             <div class="row gx-0 gy-4 justify-content-center text-center">
                 <div class="col-6 col-sm-4 col-md-4 col-lg-3 brand-style1">
-                    <img src="assets/img/brand/logo-1-1.png" alt="Barnad Image">
+                    <img src="assets/img/brand/logo-1-1.png" alt="Barnad Image" width="127" height="109" loading="lazy" decoding="async">
                 </div>
                 <div class="col-6 col-sm-4 col-md-4 col-lg-3 brand-style1">
-                    <img src="assets/img/brand/logo-1-2.png" alt="Barnad Image">
+                    <img src="assets/img/brand/logo-1-2.png" alt="Barnad Image" width="132" height="115" loading="lazy" decoding="async">
                 </div>
                 <div class="col-6 col-sm-4 col-md-4 col-lg-3 brand-style1">
-                    <img src="assets/img/brand/logo-1-3.png" alt="Barnad Image">
+                    <img src="assets/img/brand/logo-1-3.png" alt="Barnad Image" width="113" height="109" loading="lazy" decoding="async">
                 </div>
                 <div class="col-6 col-sm-4 col-md-4 col-lg-3 brand-style1">
-                    <img src="assets/img/brand/logo-1-4.png" alt="Barnad Image">
+                    <img src="assets/img/brand/logo-1-4.png" alt="Barnad Image" width="113" height="98" loading="lazy" decoding="async">
                 </div>
             </div>
         </div>
@@ -1660,22 +1662,22 @@
                             <h3 class="widget_title">Instagram Photos</h3>
                             <div class="sidebar-gallery">
                                 <div class="gallery-thumb">
-                                    <a class="popup-image" href="assets/img/gallery/gal-2-1.webp"><img src="assets/img/gallery/gal-2-1.webp" alt="Gallery Image" class="w-100"></a>
+                                    <a class="popup-image" href="assets/img/gallery/gal-2-1.webp"><img src="assets/img/gallery/gal-2-1.webp" alt="Gallery Image" class="w-100" loading="lazy" decoding="async"></a>
                                 </div>
                                 <div class="gallery-thumb">
-                                    <a class="popup-image" href="assets/img/gallery/gal-2-2.webp"><img src="assets/img/gallery/gal-2-2.webp" alt="Gallery Image" class="w-100"></a>
+                                    <a class="popup-image" href="assets/img/gallery/gal-2-2.webp"><img src="assets/img/gallery/gal-2-2.webp" alt="Gallery Image" class="w-100" loading="lazy" decoding="async"></a>
                                 </div>
                                 <div class="gallery-thumb">
-                                    <a class="popup-image" href="assets/img/gallery/gal-2-3.webp"><img src="assets/img/gallery/gal-2-3.webp" alt="Gallery Image" class="w-100"></a>
+                                    <a class="popup-image" href="assets/img/gallery/gal-2-3.webp"><img src="assets/img/gallery/gal-2-3.webp" alt="Gallery Image" class="w-100" loading="lazy" decoding="async"></a>
                                 </div>
                                 <div class="gallery-thumb">
-                                    <a class="popup-image" href="assets/img/gallery/gal-2-4.webp"><img src="assets/img/gallery/gal-2-4.webp" alt="Gallery Image" class="w-100"></a>
+                                    <a class="popup-image" href="assets/img/gallery/gal-2-4.webp"><img src="assets/img/gallery/gal-2-4.webp" alt="Gallery Image" class="w-100" loading="lazy" decoding="async"></a>
                                 </div>
                                 <div class="gallery-thumb">
-                                    <a class="popup-image" href="assets/img/gallery/gal-2-5.webp"><img src="assets/img/gallery/gal-2-5.webp" alt="Gallery Image" class="w-100"></a>
+                                    <a class="popup-image" href="assets/img/gallery/gal-2-5.webp"><img src="assets/img/gallery/gal-2-5.webp" alt="Gallery Image" class="w-100" loading="lazy" decoding="async"></a>
                                 </div>
                                 <div class="gallery-thumb">
-                                    <a class="popup-image" href="assets/img/gallery/gal-2-6.webp"><img src="assets/img/gallery/gal-2-6.webp" alt="Gallery Image" class="w-100"></a>
+                                    <a class="popup-image" href="assets/img/gallery/gal-2-6.webp"><img src="assets/img/gallery/gal-2-6.webp" alt="Gallery Image" class="w-100" loading="lazy" decoding="async"></a>
                                 </div>
                             </div>
                         </div>
@@ -1683,7 +1685,7 @@
                 </div>
             </div>
         </div>
-        <div class="copyright-area" data-bg-src="assets/img/shape/footer-5-2.png">
+        <div class="copyright-area" data-bg-src="assets/img/shape/footer-5-2.webp">
             <div class="container">
                 <div class="row justify-content-between align-items-center">
                     <div class="col-lg-auto text-center text-lg-start">
